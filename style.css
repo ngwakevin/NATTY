@@ -7,13 +7,18 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: #f9f4ef; /* Pastel beige background */
+    background-color: #ffffff; /* White background */
     color: #333;
+}
+
+/* Pastel Color */
+:root {
+    --pastel-color: #bde0fe; /* Light pastel blue */
 }
 
 /* Navbar */
 .navbar {
-    background-color: #ffb3c1; /* Pastel pink */
+    background-color: var(--pastel-color);
     color: white;
     padding: 15px 0;
 }
@@ -45,41 +50,42 @@ body {
 
 /* Hero Section */
 .hero {
-    background-color: #ffecd1; /* Pastel peach */
+    background-color: var(--pastel-color);
     text-align: center;
     padding: 100px 20px;
+    color: #ffffff;
 }
 .hero h1 {
     font-size: 36px;
-    color: #6b705c; /* Dark pastel green */
+    color: #ffffff;
 }
 .hero p {
     font-size: 18px;
-    color: #333;
     margin: 20px 0;
 }
 .hero .btn {
     padding: 10px 20px;
-    background-color: #88d8b0; /* Pastel green */
-    color: white;
+    background-color: white;
+    color: var(--pastel-color);
     text-decoration: none;
     font-size: 16px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .hero .btn:hover {
-    background-color: #6bb893; /* Slightly darker green */
+    background-color: var(--pastel-color);
+    color: white;
 }
 
 /* Services Section */
 .services {
     padding: 50px 20px;
-    background-color: #e4f9f5; /* Light pastel turquoise */
+    background-color: white;
 }
 .services h2 {
     text-align: center;
     font-size: 28px;
-    color: #6b705c;
+    color: var(--pastel-color);
     margin-bottom: 20px;
 }
 .service-cards {
@@ -89,25 +95,24 @@ body {
     flex-wrap: wrap;
 }
 .card {
-    background-color: #fff0f3; /* Soft pastel pink */
+    background-color: var(--pastel-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
+    color: white;
 }
 .card h3 {
     font-size: 20px;
-    color: #333;
 }
 .card p {
     font-size: 16px;
-    color: #555;
 }
 
 /* Footer */
 footer {
-    background-color: #6b705c; /* Dark pastel green */
+    background-color: var(--pastel-color);
     color: white;
     text-align: center;
     padding: 15px 0;
